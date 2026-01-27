@@ -1,0 +1,117 @@
+.button {
+    background-color: #36798e;
+    border-radius: 3px;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 30.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    opacity: 1.0;
+    max-height: 100px;
+    box-shadow: 3px 3px 2px rgb(168, 168, 168);
+}
+
+
+
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #36798e;
+  box-shadow: 3px 3px 2px #3d3d3d86;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+
+nav {
+    margin: -10px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    font-size: large;
+    border: solid 9px #f1f1f1;
+    box-shadow: 5px 5px 3px rgb(168, 168, 168);
+
+
+}
+img {
+    padding: 15px;
+}
+h2 {
+    color: #ffffff;
+    background-color: #36798e;
+    padding: 5px;
+    border-radius: 6px;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.main {
+    padding: 10px;
+    border: solid 4px #36798e;
+    border-radius: 5px;
+    fill: #f1f1f1;
+    max-width: fit-content;
+
+    background-color: #f1f1f1;
+
+    margin: auto;
+    font-size: large;
+    margin-top: 40px;
+    position: bottom;
+    text-align: center;
+
+
+}
+.store {
+    padding: 10px;
+    border: solid 4px #36798e;
+    border-radius: 5px;
+    fill: #f1f1f1;
+
+    background-color: #f1f1f1;
+
+    margin: auto;
+    font-size: large;
+    margin-top: 40px;
+    position: bottom;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.item {
+    margin-bottom: 0px;
+    vertical-align: sub;
+    vertical-align: bottom;
+    text-decoration: none;
+
+    margin: 5px;
+
+    max-width: fit-content;
+    border: solid 2px #d3d3d3;
+    border-radius: 3px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+}
+.item:hover {
+  background-color: #ffffff;
+  color: #36798e;
+  box-shadow: 3px 3px 2px rgb(168, 168, 168);
+  font-size: larger;
+  padding: -20px;
+  margin: -0px;
+
+  
+}
+
+
+
