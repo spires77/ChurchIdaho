@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../design.css">
+    <script src="items/items.js"></script>
+
+</head>
+<body>
+    <nav><!--Navigationsleiste-->
+        <img src="../gfx/logo.png" height="100" style="margin-bottom: -55px;">
+        <a class="button" href="../index.html">Home</a> |
+        <a class="button" href="../locations.html">Locations</a> |
+        <a class="button" href="../belief.html">Our Beliefs</a> |
+        <a class="button" href="../about.html">About</a>
+        <a class="button" style="float: right;font-size: larger;border-radius: 50px; margin-top: 15px;" href="store.html"><b>Store</b></a>
+    </nav>
+    <div id="main" class="main">
+        <img class="simage" src="../gfx/logo.png" width="300px" alt="">
+        <h2 id="i_name">Placeholder</h2>
+        <p id="i_desc">Placeholder</p>
+        <a class="button" href="../store.html">Buy Now</a>
+        <a class="button">Add to Basket</a>
+        <p id="basket">Test</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const store = document.getElementById("main");
+
+            store.innerHTML = `
+                <img class="simage" src="../gfx/logo.png" width="300px" alt="">
+                <h2 id="i_name">${items.text}</h2>
+                <p id="i_desc">${items.desc}</p>
+                <a class="button" href="../store.html">Buy Now</a>
+                <a class="button">Add to Basket</a>
+                <p id="basket">Test</p>
+            `;
+        });
+    </script>
+
+    
+
+
+
+    
+
+    
+
+</body>
+</html>

@@ -1,3 +1,9 @@
+
+
+
+
+
+
 .button {
     background-color: #36798e;
     border-radius: 3px;
@@ -11,16 +17,32 @@
     font-size: 20px;
     opacity: 1.0;
     max-height: 100px;
-    box-shadow: 3px 3px 2px rgb(168, 168, 168);
+
+
+
 }
 
 
+
+@keyframes basic {
+    from {background-color: #36798e;}
+    to {background-color: #ffffff;}
+}
 
 
 nav a:hover {
   background-color: #ffffff;
   color: #36798e;
   box-shadow: 3px 3px 2px #3d3d3d86;
+  animation-name: basic;
+  animation-duration: 0.3s;
+}
+.main a:hover {
+  background-color: #ffffff;
+  color: #36798e;
+  box-shadow: 3px 3px 2px #3d3d3d86;
+  animation-name: basic;
+  animation-duration: 0.3s;
 }
 
 body {
@@ -71,7 +93,7 @@ h2 {
 
 }
 .store {
-    padding: 10px;
+    padding: 15px;
     border: solid 4px #36798e;
     border-radius: 5px;
     fill: #f1f1f1;
@@ -98,20 +120,42 @@ h2 {
     border: solid 2px #d3d3d3;
     border-radius: 3px;
 
+
+
     box-sizing: border-box;
 
     background-color: white;
 }
+
+@keyframes item {
+    from {
+        font-size: large;
+        box-shadow: none;
+    }
+    to {
+        background-color: #ffffff;
+        box-shadow: 3px 3px 2px rgb(168, 168, 168);
+        font-size: larger;
+    }
+}
+
 .item:hover {
   background-color: #ffffff;
   color: #36798e;
   box-shadow: 3px 3px 2px rgb(168, 168, 168);
-  font-size: larger;
+  font-size: 22px;
   padding: -20px;
-  margin: -0px;
-
-  
+  margin: 5px;
+  margin-bottom: -5px;
+  animation-name: item;
+  animation-duration: 0.2s;
 }
+
+.simage {
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+}
+
 
 
 

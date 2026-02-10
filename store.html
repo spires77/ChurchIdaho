@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="design.css">
+    <script src="items/items.js"></script>
 </head>
+
 <body>
     <nav><!--Navigationsleiste-->
         <img src="gfx/logo.png" height="100" style="margin-bottom: -55px;">
@@ -13,20 +16,44 @@
         <a class="button" href="locations.html">Locations</a> |
         <a class="button" href="belief.html">Our Beliefs</a> |
         <a class="button" href="about.html">About</a>
-        <a class="button" style="float: right;font-size: larger;border-radius: 50px; margin-top: 15px;" href="store.html"><b>Store</b></a>
+        <a class="button" style="float: right;font-size: larger;border-radius: 50px; margin-top: 15px;"
+        href="store.html"><b>Store</b></a>
     </nav>
-    
-    <div class="store" style="width: fit-content;">
-        <div class="item"><a href="store.html"><img src="gfx/logo2.png" alt=""><p style="margin-top: -10px;margin-left: 15px;">Test</p></a></div>
-        <div class="item"><a href="store.html"><img src="gfx/logo2.png" alt=""><p style="margin-top: -10px;margin-left: 15px;">Test</p></a></div>
-        <div class="item"><a href="store.html"><img src="gfx/logo2.png" alt=""><p style="margin-top: -10px;margin-left: 15px;">Test</p></a></div>
-        <div class="item"><a href="store.html"><img src="gfx/logo2.png" alt=""><p style="margin-top: -10px;margin-left: 15px;">Test</p></a></div>
-        <div class="item"><a href="store.html"><img src="gfx/logo2.png" alt=""><p style="margin-top: -10px;margin-left: 15px;">Test</p></a></div>
-        <div class="item"><a href="store.html"><img src="gfx/logo2.png" alt=""><p style="margin-top: -10px;margin-left: 15px;">Test</p></a></div>
-    </div>
-    
 
-    
+    <div class="store" id="store" style="width: fit-content;">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                
+
+
+
+                const store = document.getElementById("store");
+
+                items.forEach(item => {
+                    const div = document.createElement("div");
+                    div.className = "item";
+
+                    div.innerHTML = `
+                    <a href="${item.link}">
+                        <img src="${item.img}" alt="">
+                        <p style="margin-top:-10px;margin-left:15px;">
+                            ${item.text}
+                        </p>
+                    </a>
+                `;
+
+                    store.appendChild(div);
+                });
+            });
+        </script>
+
+    </div>
+
+
+
 
 </body>
+
 </html>
