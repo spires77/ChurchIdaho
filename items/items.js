@@ -1,17 +1,17 @@
-const items = [
+items = [
     {
-        link: "items/item1.html",
-        img: "gfx/logo2.png",
-        text: "Test 1"
+        link: "../index",
+        img: "gfx/img1.jpg",
+        text: "Sticker Set 3x"
     },
     {
-        link: "store.html",
-        img: "gfx/logo2.png",
-        text: "Test 2"
+        link: "../index",
+        img: "gfx/img1.jpg",
+        text: "Sticker Set 6x"  
     },
     {
-        link: "store.html",
-        img: "gfx/logo2.png",
-        text: "Test 3"
+        link: "../index",
+        img: "gfx/img1.jpg",
+        text: "Jesus Bodypillow"
     }
-];
+]
