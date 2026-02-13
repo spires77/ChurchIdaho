@@ -157,11 +157,20 @@ h2 {
 }
 
 .comment {
-    margin:auto;
+    padding: 10px;
+    border: solid 2px #36798e;
+    border-radius: 5px;
+    fill: #f1f1f1;
+    max-width: fit-content;
 
+    background-color: #f1f1f1;
+
+    margin: auto;
+    font-size: large;
+    margin-top: 40px;
+    position: bottom;
+    text-align: center;
 }
-
-
 
 
 
